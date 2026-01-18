@@ -65,7 +65,7 @@ const Navbar = () => {
               className={`${isBeyondPage ? "text-[#F0BB78]" : "text-secondary hover:text-white"} text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive("Beyond")}
             >
-              <Link to='/beyond' target='_blank'>Beyond</Link>
+              <Link to="/beyond">Beyond</Link>
             </li>
           </ul>
           <div className='flex gap-4'>
@@ -120,7 +120,7 @@ const Navbar = () => {
                   setActive("Beyond");
                 }}
               >
-                <Link to='/beyond' target='_blank'>Beyond</Link>
+                <Link to="/beyond">Beyond</Link>
               </li>
             </ul>
           </div>
