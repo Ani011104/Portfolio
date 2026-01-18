@@ -9,26 +9,34 @@ import close from "./close.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import aws from "./tech/aws.png";
+import c from "./tech/c.png";
+import cpp from "./tech/cpp.png";
+import fastapi from "./tech/fastapi.png";
+import githubActions from "./tech/github-actions.png";
+import gcp from "./tech/gcp.png";
+import terraform from "./tech/terraform.png";
+import java from "./tech/java.png";
+import jenkins from "./tech/jenkins.png";
+import linux from "./tech/linux.png";
+import mysql from "./tech/mysql.png";
+import postman from "./tech/postman.png";
+import python from "./tech/python.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import otp_auth from "./otp_auth_new.png";
+import aws_vpc from "./aws_vpc_new.png";
+import multi_cloud from "./multi_cloud_new.png";
+import static_hosting from "./static_hosting_new.png";
+import linkedin from "./linkedin.png";
+import gmail from "./gmail.png";
+import shivagange from "./shivagange.jpg";
+import trekHills from "./trek_hills.jpg";
 
 export {
   logo,
@@ -41,22 +49,30 @@ export {
   close,
   css,
   docker,
-  figma,
   git,
   html,
   javascript,
   mongodb,
   nodejs,
-  reactjs,
-  redux,
-  tailwind,
-  typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  aws,
+  c,
+  cpp,
+  fastapi,
+  githubActions,
+  gcp,
+  terraform,
+  java,
+  jenkins,
+  linux,
+  mysql,
+  postman,
+  python,
+  otp_auth,
+  aws_vpc,
+  multi_cloud,
+  static_hosting,
+  linkedin,
+  gmail,
+  shivagange,
+  trekHills
 };

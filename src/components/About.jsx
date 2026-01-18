@@ -1,39 +1,62 @@
 import React from "react";
-import Tilt from "react-tilt";
 import { motion } from "framer-motion";
+import Typewriter from "typewriter-effect";
 
 import { styles } from "../styles";
-import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
-    >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
-      >
-        <img
-          src={icon}
-          alt='web-development'
-          className='w-16 h-16 object-contain'
-        />
-
-        <h3 className='text-white text-[20px] font-bold text-center'>
-          {title}
-        </h3>
+const Terminal = () => {
+  return (
+    <div className='w-full max-w-4xl mx-auto mt-20 bg-black-100 rounded-lg shadow-card overflow-hidden border border-white/10'>
+      {/* Terminal Header */}
+      <div className='bg-tertiary px-4 py-2 flex items-center gap-2 border-b border-white/5'>
+        <div className='w-3 h-3 rounded-full bg-[#ff5f56]'></div>
+        <div className='w-3 h-3 rounded-full bg-[#ffbd2e]'></div>
+        <div className='w-3 h-3 rounded-full bg-[#27c93f]'></div>
+        <div className='flex-1 text-center text-secondary text-sm font-mono opacity-80'>
+          anirudh@devops-station:~/skills
+        </div>
       </div>
-    </motion.div>
-  </Tilt>
-);
+
+      {/* Terminal Body */}
+      <div className='p-6 font-mono text-sm sm:text-base min-h-[300px] text-gray-300'>
+        <Typewriter
+          options={{
+            delay: 30,
+            cursor: "█",
+          }}
+          onInit={(typewriter) => {
+            typewriter
+              .typeString('<span class="text-green-400">➜</span> <span class="text-blue-400">~</span> initializing_environment...<br/>')
+              .pauseFor(500)
+              .typeString('<span class="text-green-400">➜</span> <span class="text-blue-400">~</span> load_module "Cloud Architecture"<br/>')
+              .pauseFor(300)
+              .typeString('<span class="text-yellow-400">> [INFO] AWS & GCP Integration: ACTIVE</span><br/>')
+              .typeString('<span class="text-yellow-400">> [INFO] Scalability: HIGH</span><br/>')
+              .pauseFor(500)
+              .typeString('<span class="text-green-400">➜</span> <span class="text-blue-400">~</span> load_module "DevOps Automation"<br/>')
+              .pauseFor(300)
+              .typeString('<span class="text-yellow-400">> [INFO] CI/CD Pipelines: OPTIMIZED</span><br/>')
+              .typeString('<span class="text-yellow-400">> [INFO] Deployment Time: < 5min</span><br/>')
+              .pauseFor(500)
+              .typeString('<span class="text-green-400">➜</span> <span class="text-blue-400">~</span> load_module "Backend Engineering"<br/>')
+              .pauseFor(300)
+              .typeString('<span class="text-yellow-400">> [INFO] API Latency: LOW</span><br/>')
+              .typeString('<span class="text-yellow-400">> [INFO] Security Protocols: ENFORCED</span><br/>')
+              .pauseFor(500)
+              .typeString('<span class="text-green-400">➜</span> <span class="text-blue-400">~</span> load_module "AI Integration"<br/>')
+              .pauseFor(300)
+              .typeString('<span class="text-yellow-400">> [INFO] Agents: DEPLOYED</span><br/>')
+              .pauseFor(500)
+              .typeString('<br/><span class="text-green-400">➜</span> <span class="text-blue-400">~</span> echo "System Status: All systems operational."')
+              .start();
+          }}
+        />
+      </div>
+    </div>
+  );
+};
 
 const About = () => {
   return (
@@ -47,18 +70,18 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I build things behind the scenes so they don’t fall apart in production.
+        Cloud architecture, DevOps pipelines, backend systems, and AI agents that work more than they hallucinate.
+        I like automation, clean design, and systems that stay quiet at 3 a.m.
+        because silence usually means I did my job right.
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
+      <motion.div
+        variants={fadeIn("up", "spring", 0.5, 0.75)}
+        className="w-full"
+      >
+        <Terminal />
+      </motion.div>
     </>
   );
 };

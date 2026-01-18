@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { linkedin, gmail } from "../assets";
 
 const Contact = () => {
   const formRef = useRef();
@@ -121,6 +122,31 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
+
+        <div className='mt-10'>
+          <div className='flex gap-4'>
+            <div
+              onClick={() => window.open("https://www.linkedin.com/in/anirudh-s-754607254/", "_blank")}
+              className='w-12 h-12 rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-transform duration-200 bg-tertiary'
+            >
+              <img
+                src={linkedin}
+                alt='linkedin'
+                className='w-3/4 h-3/4 object-contain'
+              />
+            </div>
+            <div
+              onClick={() => window.open("mailto:anirudh.s011104@gmail.com", "_blank")}
+              className='w-12 h-12 rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-transform duration-200 bg-tertiary'
+            >
+              <img
+                src={gmail}
+                alt='gmail'
+                className='w-3/4 h-3/4 object-contain'
+              />
+            </div>
+          </div>
+        </div>
       </motion.div>
 
       <motion.div

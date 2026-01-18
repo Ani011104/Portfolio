@@ -4,25 +4,29 @@ import {
   creator,
   web,
   javascript,
-  typescript,
   html,
   css,
-  reactjs,
-  redux,
-  tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  otp_auth,
+  aws_vpc,
+  multi_cloud,
+  static_hosting,
+  aws,
+  c,
+  cpp,
+  fastapi,
+  githubActions,
+  gcp,
+  terraform,
+  java,
+  jenkins,
+  linux,
+  mysql,
+  postman,
+  python,
 } from "../assets";
 
 export const navLinks = [
@@ -42,168 +46,112 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "React Native Developer",
+    title: "Cloud Architecture",
     icon: mobile,
+    description: "Designing scalable, fault-tolerant systems on AWS & GCP.",
   },
   {
-    title: "Backend Developer",
+    title: "DevOps Automation",
+    icon: web,
+    description: "CI/CD pipelines that deploy faster than you can grab coffee.",
+  },
+  {
+    title: "Backend Engineering",
     icon: backend,
+    description: "APIs built for speed, security, and high concurrency.",
   },
   {
-    title: "Content Creator",
+    title: "AI Integration",
     icon: creator,
+    description: "Building intelligent agents that actually solve problems.",
   },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "Python",
+    icon: python,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "Java",
+    icon: java,
   },
   {
     name: "JavaScript",
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
+    name: "Node.js",
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "FastAPI",
+    icon: fastapi,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "AWS",
+    icon: aws,
   },
   {
-    name: "git",
+    name: "GCP",
+    icon: gcp,
+  },
+  {
+    name: "Terraform",
+    icon: terraform,
+  },
+  {
+    name: "Docker",
+    icon: docker,
+  },
+  {
+    name: "Jenkins",
+    icon: jenkins,
+  },
+  {
+    name: "GitHub Actions",
+    icon: githubActions,
+  },
+  {
+    name: "Linux",
+    icon: linux,
+  },
+  {
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
+    name: "Postman",
+    icon: postman,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Freelance Backend Engineer",
+    company_name: "Khaleezi",
+    icon: backend,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Jan 2025 – Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built and owned backend APIs for an early-stage product (users, orders, auth).",
+      "Designed systems with clean separation, env-based config, and versioned releases.",
+      "Containerized services with Docker and automated CI/CD, cutting manual deploy work ~60%.",
+      "Focused on reliability, scalability, and not shipping surprises to production.",
     ],
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
+
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "OTP Authentication Backend",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Implemented OTP-based signup/login with 10-minute expiry and one-time validation. Issued JWT tokens post-verification and persisted users in MongoDB. Managed 100% secrets via environment-based configuration.",
     tags: [
       {
-        name: "react",
+        name: "nodejs",
         color: "blue-text-gradient",
       },
       {
@@ -211,55 +159,76 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "jwt",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: otp_auth,
+    source_code_link: "https://github.com/Ani011104/OTP-Authentication",
   },
   {
-    name: "Job IT",
+    name: "AWS Multi-Region VPC Peering",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Provisioned private connectivity across 2 AWS regions using VPC peering. Deployed routing between 2 VPCs with validated EC2 connectivity. Automated creation of 10+ AWS resources with remote state locking.",
     tags: [
       {
-        name: "react",
+        name: "aws",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "terraform",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "infrastructure",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: aws_vpc,
+    source_code_link: "https://github.com/Ani011104/terraform-aws-vpc-peering",
   },
   {
-    name: "Trip Guide",
+    name: "Multi-Cloud Container Pipeline",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "CI/CD automation using GitHub Actions. Dockerized 2-tier application. Images pushed to AWS ECR and GCP Artifact Registry, deployed to ECS and Cloud Run.",
     tags: [
       {
-        name: "nextjs",
+        name: "docker",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "github-actions",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "multi-cloud",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: multi_cloud,
+    source_code_link: "https://github.com/Ani011104/DevOps-Assignment",
+  },
+  {
+    name: "Secure Static Hosting on AWS",
+    description:
+      "Hosted a secure static website using S3 + CloudFront with HTTPS. Enforced private S3 access via Origin Access Control and bucket policies for enhanced security.",
+    tags: [
+      {
+        name: "aws",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "cloudfront",
+        color: "green-text-gradient",
+      },
+      {
+        name: "s3",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: static_hosting,
+    source_code_link: "https://github.com/Ani011104/terraform-aws-static-portfolio",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };
